@@ -1,0 +1,370 @@
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Seção Sobre Nós */
+#sobre {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#sobre h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    color: #777;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Galeria */
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container do título */
+.container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Estilo da Galeria */
+#galeria {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.foto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover */
+.foto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foto:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .galeria-container {
+        padding: 0;
+    }
+
+    .foto {
+        box-shadow: none;
+    }
+}
+
+
+/* Seção WhatsApp */
+/* Estilos Gerais */
+/* Estilos Gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo da seção Whatsapp */
+#whatsapp {
+    background-color: #e6f7f1; /* Cor suave de fundo */
+    color: #333;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid #25D366; /* Borda sutil verde */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+    animation: moveBorder 5s infinite linear;
+}
+
+#whatsapp h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+#whatsapp p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+/* Estilo do link do WhatsApp */
+.whatsapp-link {
+    display: inline-block;
+    background-color: #128C7E; /* Cor do botão do WhatsApp */
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.whatsapp-link span {
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Efeito hover no botão */
+.whatsapp-link:hover {
+    background-color: #075E54;
+    transform: translateY(-3px); /* Levanta o botão um pouco */
+}
+
+.whatsapp-link:active {
+    transform: translateY(1px); /* Efeito de pressionamento */
+}
+
+/* Efeito de animação na borda */
+@keyframes moveBorder {
+    0% {
+        border-color: #25D366;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+    50% {
+        border-color: #128C7E;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        border-color: #25D366;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #whatsapp h2 {
+        font-size: 1.8rem;
+    }
+
+    #whatsapp p {
+        font-size: 1rem;
+    }
+
+    .whatsapp-link {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav a {
+        font-size: 1.2rem;
+        margin: 5px 0;
+    }
+
+    #sobre h2 {
+        font-size: 2rem;
+    }
+
+    #sobre p {
+        font-size: 1rem;
+    }
+
+    .galeria-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    #whatsapp h2 {
+        font-size: 1.5rem;
+    }
+
+    #whatsapp p {
+        font-size: 1rem;
+    }
+
+    .whatsapp-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilo do container de cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px;
+    width: 100%;
+}
+
+/* Estilo da imagem */
+.card-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Estilo do conteúdo do card */
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .card-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .card-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .card-content p {
+        font-size: 0.9rem;
+    }
+}
